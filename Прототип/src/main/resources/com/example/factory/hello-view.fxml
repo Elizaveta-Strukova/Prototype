@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<VBox alignment="CENTER" prefHeight="553.0" prefWidth="765.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.factory.HelloController">
+<padding>
+
+</padding>
+<AnchorPane prefHeight="514.0" prefWidth="413.0">
+<children>
+    <Canvas fx:id="canvas" height="335.0" layoutX="52.0" layoutY="57.0" onMouseClicked="#onDrawClick" width="371.0" />
+    <ColorPicker fx:id="colorpicker" layoutX="33.0" layoutY="411.0">
+        <value>
+            <Color red="1.0" />
+        </value></ColorPicker>
+
+    <Label alignment="TOP_CENTER" layoutX="18.0" layoutY="467.0" prefHeight="22.0" prefWidth="173.0" text="Введите номер фигуры" />
+    <TextField fx:id="fabrica" layoutX="222.0" layoutY="465.0" promptText="number" />
+    <ListView fx:id="listView" layoutX="526.0" layoutY="267.0" prefHeight="200.0" prefWidth="174.0" />
+    <Button fx:id="drawbutton" layoutX="395.0" layoutY="465.0" mnemonicParsing="false" onAction="#drawFactory" prefHeight="25.0" prefWidth="85.0" text="Нарисовать" />
+         <TextField layoutX="223.0" layoutY="424.0" promptText="weight" />
+</children>
+</AnchorPane>
+</VBox>

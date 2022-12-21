@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="580.0" prefWidth="496.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.strukova1.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Canvas fx:id="canvas" height="200.0" onMouseClicked="#OnDrawClick" width="200.0" />
+   <Button mnemonicParsing="false" onAction="#onOvalButtonClick" prefHeight="26.0" prefWidth="77.0" text="Oval" />
+
+
+    <Button onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="72.0" text="Line" />
+   <ColorPicker fx:id="colorpicker" prefHeight="35.0" prefWidth="146.0" />
+   <TextField fx:id="textweight" promptText="Weight" />
+   <TextField fx:id="textx" promptText="x" />
+   <TextField fx:id="texty" promptText="y" />
+</VBox>
